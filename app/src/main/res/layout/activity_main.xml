@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#228b22"
+    tools:context="com.code.abhishek.quiz.MainActivity"
+    android:weightSum="1"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:weightSum="1"
+        style="?android:buttonBarStyle"
+        android:background="#deb887"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="YES"
+            android:id="@+id/truebutton"
+            android:layout_weight="0.51"
+            android:drawableLeft="@drawable/arrow_l"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="No"
+            android:id="@+id/falsebutton"
+            android:layout_weight="0.51"
+            android:drawableRight="@drawable/arrow_r"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/nextbutton"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/arrow_ri"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/mainshape1"
+        android:shadowColor="#6B51A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:id="@+id/hintbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/mainshape"
+        android:shadowColor="#6B51A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheat"
+        android:id="@+id/cheatbutton"
+        android:layout_weight="0.03"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/mainshape"
+        android:shadowColor="#6B51A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+
+</LinearLayout>
